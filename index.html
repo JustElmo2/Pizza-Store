@@ -1,22 +1,247 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Pizza-Store</title>
-    <link rel=stylesheet href=style.css>
-  </head>
-  <body>
-    <div id="start-page">
-        <div id="logo">
-            <img src="pictures/logo.png" width="100" height="100">
+<head>
+<title>Template4</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Playwrite+DK+Loopet:wght@100..400&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="Logo">
+            <img src="logo.png" alt="Logo">
         </div>
-        <nav>
+        <div class="Menu">
             <ul>
-                <li><a href="#Home"><b>Home</b></a></li>
-                <li><a href="#About"><b>About</b></a></li>
-                <li><a href="#Menu"><b>Menu</b></a></li>
-                <li><a href="#Contact"><b>Contact</b></a></li>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Specials">Aanbiedingen</a></li>
+                <li><a href="#Menukaart">Menu</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Contact">Contact</a></li>
             </ul>
-        </nav>
+        </div>
+    </header>
+	 <section class="begin" id="Home">
+			<h1>Mario's Pizza</h1><br>
+			<p><b>Hand gemaakte pizza's die vers uit de oven komen.</b></p>
+            <p><b>Pizza's met de beste ingrediënten.</b></p>
+            <button class="bekijk-menu" onclick="window.location.href='#Menukaart'">Bekijk Menu</button>
+	</section>
+
+    <section class="Specials" id="Specials">
+        <div class="specials-header">
+            <h1>Speciale aanbiedingen</h1>
+        </div>
+        <div class="specials-menu">
+            <div class="specials-menu-item1">
+                <img src="Clock.png" alt="Clock">
+                <h1><b>Maandag</b></h1>
+                <p>Bezorging is Gratis!</p>
+            </div>
+            <div class="specials-menu-item2">
+                <img src="Korting2.png" alt="Clock">
+                <h1><b>Woensdag</b></h1>
+                <p>5% Korting bij iedere pizza!</p>
+            </div>
+            <div class="specials-menu-item3">
+                <img src="Korting.png" alt="Clock">
+                <h1><b>Vrijdag</b></h1>
+                <p>2 + 1 Gratis!</p>
+            </div>
+        </div>
+    </section>  
+
+    <section class="Menukaart" id="Menukaart">
+<div class="menu-container">
+  <h1>Ons Menu</h1>
+  <div class="tabs">
+    <button class="tab-button active" data-tab="pizzas">Pizza's</button>
+    <button class="tab-button" data-tab="sides">Bijgerechten</button>
+    <button class="tab-button" data-tab="desserts">Desserts</button>
+    <button class="tab-button" data-tab="drinks">Drinken</button>
+  </div>
+
+  <div class="menu-content">
+    <div class="menu-tab active" id="pizzas">
+      <!-- Pizza items hier -->
+    <div class="item">
+        <img src="Pizza1.png" alt="Margherita Pizza" width="200" height="200">
+        <h2>Margherita</h2>
+        <p>7.99,-</p>
     </div>
-  </body>
+
+    <div class="item">
+        <img src="Pizza2.png" alt="Pepperoni Pizza" width="200" height="200">
+        <h2>Pepperoni</h2>
+        <p>9.99,-</p>
+    </div>
+    <div class="item">
+        <img src="Pizza3.png" alt="Hawaii Pizza" width="200" height="200">
+        <h2>Hawaii</h2>
+        <p>11.99,-</p>
+    </div>
+    </div>
+
+    <div class="menu-tab" id="sides">
+      <div class="item">
+        <img src="bijgereecht1.png" alt="Knoflook Brood" width="200" height="200">
+        <h2>Knoflook Brood</h2>
+        <p>1.99,-</p>
+      </div>
+      <div class="item">
+        <img src="bijgerecht2.png" alt="Mozzarella Sticks" width="200" height="200">
+        <h2>Mozzarella Sticks</h2>
+        <p>2.99,-</p>
+      </div>
+    </div>
+
+    <div class="menu-tab" id="desserts">
+      <div class="item">
+        <img src="toetje1.png" alt="Tiramisu" wwidth="200" height="200">
+        <h2>Tiramisu</h2>
+        <p>4.99,-</p>
+    </div>
+      <div class="item">
+        <img src="toetje2.png" alt="Chocolade Taart" width="200" height="200">
+        <h2>Chocolade Taart</h2>
+        <p>5.99,-</p>
+    </div>
+    </div>
+    <div class="menu-tab" id="drinks">
+      <div class="item">
+        <img src="drinken1.png" alt="Cola" width="200" height="200">
+        <h2>Cola</h2>
+        <p>1.99,-</p>
+      </div>
+      <div class="item">
+        <img src="drinken2.png" alt="Ice Tea" width="200" height="200">
+        <h2>Ice Tea</h2>
+        <p>1.99,-</p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+    <section class="about" id="About">
+    <div class="about-title">
+        <h1>Ons Verhaal</h1>
+    </div>
+    <div class="about-header">
+        <div class="about-header-text">
+            <p>Welkom bij Pizzeria Mario, waar elke pizza begint met passie en eindigt met een glimlach.</p>
+            <p>Ons verhaal begint in het hart van Italië, waar de geur van versgebakken pizza en het geluid van gezellige familiemaaltijden ons inspireerden. 
+                Gedreven door een liefde voor ambachtelijk koken en de wens om die authentieke Italiaanse beleving naar Nederland te brengen, openden we onze deuren met één simpel doel: 
+                mensen samenbrengen met heerlijk eten.</p>
+            <p>Bij Pizza Mario geloven we in eenvoud, kwaliteit en traditie. 
+                Onze deeg wordt dagelijks vers bereid, met de hand uitgerold en belegd met de beste ingrediënten – van sappige tomaten uit San Marzano tot romige mozzarella en geurige basilicum. 
+                Elke pizza uit onze houtoven vertelt een verhaal van vakmanschap en liefde voor het vak.</p>
+            <p>Maar Pizza Mario is meer dan een pizzeria – het is een plek waar herinneringen worden gemaakt. 
+                Of je nu langskomt voor een snelle lunch, een uitgebreid diner met vrienden, of gewoon zin hebt in een stukje Italië, bij ons voel je je altijd thuis.</p>
+            <br>
+            <p>Welkom bij onze familie. Welkom bij Pizza Mario.</p>
+        </div>
+        <div class="about-foto">
+        <img src="banner.png" alt="Foto van Mario" width="auto" height="300">
+        </div>
+    </div>
+    </section>
+
+    <div class="contact-title" id="Contact">
+        <h1>Bezoek ons</h1>
+     </div>
+    <div class="Contact">
+    <section class="contact">
+        <div class="informatie">
+            <h1>Contact<br>Informatie</h1><br>
+            <h3>Locatie: </h3>
+            <p>Witte huis, VS</p>
+            <br><br>
+            <h3>Telefoon: </h3>
+            <p>+31 (0)20 202 00 00</p>
+            <br><br>
+            <h3>Email: </h3>
+            <p>info&#64;pizzeriamario.nl</p>
+            <br><br>
+            <h3>Openingstijden: </h3>
+            <p>Iedere dag van 10.00 tot 17.00</p>
+         </div>
+        <div class="formulier">
+            <h1> Stuur ons een bericht</h1>
+        <form action="https://formspree.io/f/xdkgpzvk"  class="fs-form" target="_top" method="POST">
+            <div class="fs-field">
+                <label class="fs-label" for="name"><p>Naam</p></label>
+                <input class="fs-input" id="name" name="name" />
+            </div>
+            <div class="fs-field">
+                <label class="fs-label" for="email"><p>Email</p></label>
+                <input class="fs-input" id="email" name="email" required />
+            </div>
+            <div class="fs-field">
+                <label class="fs-label" for="message"><p>Bericht</p></label>
+                <textarea class="fs-textarea" id="message" name="message"></textarea>
+                <p class="fs-description">We reageren normaal binnen enkele werkdagen.</p>
+            </div>
+            <div class="fs-button-group">
+                <button class="fs-button" type="submit"><p>Verstuur</p></button>
+            </div>
+        </form>
+    </div>
+				<div class='maps'>
+			  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3105.1501997137557!2d-77.03910472556905!3d38.89768044668991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b7bcdecbb1df%3A0x715969d86d0b76bf!2sWitte%20Huis!5e0!3m2!1snl!2snl!4v1747808859744!5m2!1snl!2snl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+    </section>
+    </div>
+
+<section class="testimonials">
+		<div data-rw-slider="46383"></div>
+		<script>var script = document.createElement("script");script.type = "module";script.src = "https://widgets.revue.us/2.0/rw-widget-slider.js";document.getElementsByTagName("head")[0].appendChild(script);</script>
+</section>	
+	
+<footer>
+  <h1> Mario's Pizza</h1>
+  <div class="wrapper">
+    <div class="social-button">
+      <div class="icon">
+        <i class="fab fa-facebook-f"></i>
+      </div>
+      <span><a href="https://Facebook.com"><b>Facebook</b></a></span>
+    </div>
+
+    <div class="social-button">
+      <div class="icon">
+        <i class="fab fa-x-twitter"></i>
+      </div>
+      <span><a href="https://x.com"><b>X</b></a></span>
+    </div>
+
+    <div class="social-button">
+      <div class="icon">
+        <i class="fab fa-youtube"></i>
+      </div>
+      <span><a href="https://youtube.com"><b>YouTube</b></a></span>
+    </div>
+  </div>
+</footer>
+
+</body>
+<script>
+  const tabs = document.querySelectorAll('.tab-button');
+  const contents = document.querySelectorAll('.menu-tab');
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      // Verwijder 'active' van alle knoppen en inhoud
+      tabs.forEach(btn => btn.classList.remove('active'));
+      contents.forEach(content => content.classList.remove('active'));
+
+      // Voeg 'active' toe aan de huidige knop en juiste content
+      tab.classList.add('active');
+      document.getElementById(tab.dataset.tab).classList.add('active');
+    });
+  });
+</script>
 </html>
