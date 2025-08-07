@@ -70,7 +70,7 @@ header img {
   font-size: 25px;
   text-align: center;
   background-color: #eeeeee;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url('banner.png');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url('pictures/banner.png');
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
